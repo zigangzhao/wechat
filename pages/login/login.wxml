@@ -1,0 +1,22 @@
+<view class="index1">
+  <view class='logo'>
+    <image style="width: 330rpx; height: 50rpx;" mode='scaleToFill' src="{{logo}}"></image>
+  </view>
+  <view class="login-amoun-container">
+    <image style="width: 35rpx; height: 35rpx ;" src='{{amount}}' />
+    <view class="login-amount-input">
+      <input class="login-amount" maxlength="10" type="text" placeholder="请输入编号" focus="{{focus}}" bindinput="inputPhone" />
+      <view class="line1"></view>
+    </view>
+  </view>
+  <view class="login-password-container">
+    <image style="width: 35rpx; height: 35rpx ;" src='{{password}}' />
+    <view class="login-password-input">
+      <input class="login-password" maxlength="11" type="digit" password='true' placeholder="请输入密码" focus="{{focus}}" />
+      <view class="line2"></view>
+    </view>
+  </view>
+  <button class="confirm" type="primary" bindtap="confirmHandle">登录</button>
+</view>
+
+<radio class='login-Automatic' checked="true">自动登录</radio>
